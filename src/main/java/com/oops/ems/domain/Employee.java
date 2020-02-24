@@ -1,5 +1,7 @@
 package com.oops.ems.domain;
 
+import java.util.Date;
+
 public class Employee {
 
     private String       name;
@@ -21,6 +23,16 @@ public class Employee {
         this.setSalary(salary);
     }
 
+    public double getSalary() {
+        System.out.println("Fetch Salary of an employee");
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+
     public void setOrg(Organization org) {
         this.org = org;
         try {
@@ -32,7 +44,11 @@ public class Employee {
 
     public void join() {
 
-    } // ovefroad
+    }
+
+    public void join(Date date) {
+
+    }
 
     public Organization getOrg() {
         return org;
@@ -68,13 +84,5 @@ public class Employee {
 
     public void setDesignation(String designation) {
         this.designation = designation;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 }
