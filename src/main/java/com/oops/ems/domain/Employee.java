@@ -85,4 +85,11 @@ public class Employee {
     public void setDesignation(String designation) {
         this.designation = designation;
     }
+
+    public void printEmployeeDetails(Employee employee) {
+
+        System.out.println(employee.getSalary());
+
+
+    }
 }
